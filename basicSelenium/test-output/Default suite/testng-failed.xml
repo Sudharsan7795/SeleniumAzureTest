@@ -6,6 +6,7 @@
       <class name="testScripts.Login">
         <methods>
           <include name="newlogin"/>
+          <include name="segmentLogin"/>
         </methods>
       </class> <!-- testScripts.Login -->
     </classes>
