@@ -33,7 +33,7 @@ public class Intialize {
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			
 			//after execution, you could see a folder "FailedTestsScreenshots" under src folder
-			destination = "D:\\EclipseWorkspace\\basicSelenium\\Screenshot"+screenshotName+dateName+".png";
+			destination = System.getProperty("user.dir")+"\\Screenshot"+screenshotName+dateName+".png";
 			File finalDestination = new File(destination);
 			FileUtils.copyFile(source, finalDestination);
 		}
