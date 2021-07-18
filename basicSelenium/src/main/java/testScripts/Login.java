@@ -19,6 +19,7 @@ public class Login extends Intialize{
 	public void segmentLogin() throws InterruptedException
 	{
 		new Intialize().launch();
+		Thread.sleep(3000);
 		driver.get("https://www.tutorialspoint.com");
 		Thread.sleep(7000);
 

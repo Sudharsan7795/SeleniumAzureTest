@@ -17,7 +17,8 @@ public class Intialize {
 
 	public void launch() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"chromedriver1\\chromedriver.exe");
+		System.out.println("The Path value is "+System.getProperty("user.dir"));
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver1\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
